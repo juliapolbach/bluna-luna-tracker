@@ -7,3 +7,7 @@ async function getPrice() {
 }
 
 getPrice()
+
+module.exports = {
+	getPrice
+}
