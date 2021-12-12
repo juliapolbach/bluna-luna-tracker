@@ -1,0 +1,39 @@
+{
+  "name": "bluna-luna-tracker",
+  "version": "1.0.0",
+  "description": "A service to track bluna/luna pool price",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon bin/start.js",
+    "lint": "eslint .",
+    "tag": "git tag v$(node -pe \"require('./package.json').version\") && git push && git push --tags",
+    "test": "mocha test/** && eslint .",
+    "start": "node bin/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/juliapolbach/bluna-luna-tracker.git"
+  },
+  "keywords": [
+    "luna",
+    "bluna"
+  ],
+  "author": "Júlia Polbach",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "*",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "*",
+    "nodemon": "^2.0.13"
+  },
+  "bugs": {
+    "url": "https://github.com/juliapolbach/bluna-luna-tracker/issues"
+  },
+  "homepage": "https://github.com/juliapolbach/bluna-luna-tracker#readme"
+}
