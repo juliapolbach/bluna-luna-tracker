@@ -1,4 +1,9 @@
 'use strict'
-const { getPoolPrices } = require('../lib/common/api.coinhall')
+const { isPriceSuitable } = require('../lib/Prices/Application/priceAnalyzer')
 
-let result = getPoolPrices()
+async function getPrice() {
+	let result = await isPriceSuitable(0.95)
+	console.log(result)
+}
+
+getPrice()
