@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/juliapolbach/bluna-luna-tracker/issues"
   },
-  "homepage": "https://github.com/juliapolbach/bluna-luna-tracker#readme"
+  "homepage": "https://github.com/juliapolbach/bluna-luna-tracker#readme",
+  "dependencies": {
+    "got": "^9.6.0"
+  }
 }
