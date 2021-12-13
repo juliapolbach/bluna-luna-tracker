@@ -9,7 +9,7 @@
     "tag": "git tag v$(node -pe \"require('./package.json').version\") && git push && git push --tags",
     "test": "mocha test/** && eslint .",
     "start": "node bin/start.js",
-	"cron": "node bin/cron-ping.js"
+    "cron": "node bin/cron-ping.js"
   },
   "repository": {
     "type": "git",
